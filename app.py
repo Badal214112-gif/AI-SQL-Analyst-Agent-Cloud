@@ -39,7 +39,7 @@ if uploaded_file is not None:
         uploaded_df.head(),
         width="stretch"
     )
-    if st.button("Upload to MySQL"):
+    if st.button("Upload to Database"):
 
         upload_result = upload_dataframe(uploaded_df)
 
