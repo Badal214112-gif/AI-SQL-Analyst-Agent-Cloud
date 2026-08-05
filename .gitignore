@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+.env
+**/.env
+backend_files/.env
+
+*.db
+database.db
+
+.vscode/
