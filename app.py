@@ -70,7 +70,7 @@ if ask:
 
         try:
 
-            with st.spinner("Analyzing your question..."):
+            with st.spinner("Generating SQL and analyzing your data..."):
 
                 table_name = "uploaded_data" if uploaded_file is not None else "sales_data"
 
