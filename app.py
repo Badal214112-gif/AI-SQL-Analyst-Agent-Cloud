@@ -44,11 +44,11 @@ if uploaded_file is not None:
         upload_result = upload_dataframe(uploaded_df)
 
         if upload_result["success"]:
-            st.success("File uploaded successfully and saved to MySQL.")
+            st.success("File uploaded successfully and saved to Database.")
 
         else:
             st.error(
-                "The file could not be uploaded to MySQL. "
+                "The file could not be uploaded to Database. "
                 "Please check the file and try again."
             )
 
