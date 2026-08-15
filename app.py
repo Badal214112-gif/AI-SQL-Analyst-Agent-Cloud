@@ -128,3 +128,6 @@ if ask:
             st.error("Full Error Traceback")
             st.code(traceback.format_exc())
 
+# git add .
+# git commit -m "Your message"
+# git push
