@@ -94,7 +94,7 @@ def generate_sql(user_prompt, table_name):
 
     examples = get_examples(user_prompt, table_name)
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
                         {
                 "role": "system",
@@ -282,7 +282,7 @@ def generate_sql(user_prompt, table_name):
 def verify_sql(user_prompt, sql_query, table_name):
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
@@ -328,7 +328,7 @@ Generated SQL:
 def fix_sql(user_prompt, wrong_sql, error_message, table_name):
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
@@ -389,7 +389,7 @@ def fix_sql(user_prompt, wrong_sql, error_message, table_name):
 def explain_result(user_prompt, result):
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
